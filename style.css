@@ -1,0 +1,1297 @@
+/*
+Theme Name: Somos Estúdio
+Theme URI: https://www.somos-estudio.com/
+Author: Sidney Souza
+Author URI: https://sidneysouza.com/
+Description: Tema criado para a Somos Estúdio
+Version: 1.0
+*/
+
+
+body {
+    background-color: #EDE0D6;
+    padding: 80px;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Ragasta;
+    src: url(assets/ragasta-font/Ragasta.otf);
+}
+
+/*type*/
+
+h1 {
+    font-family: Ragasta;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    font-variant-ligatures: none;
+    color: #543021;
+}
+
+h2 {
+    font-family: Ragasta;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    font-variant-ligatures: none;
+    color: #543021;
+}
+
+h3 {
+    font-family: Work Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+}
+
+h4 {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.2px;
+}
+
+p {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 26px */
+    letter-spacing: -0.2px;
+}
+
+small {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+}
+
+a {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.20px;
+}
+
+/* Estilos */
+
+button {
+    padding: 24px 80px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px solid #C97043;
+    background: #EDE0D6;
+    color: #543021;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}
+
+button a {
+    display: flex;
+    gap: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+
+    color: white;
+    transition: 0.3s ease;
+}
+
+main {
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+nav a {
+    color: #543021;
+    /* p-menor */
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.18px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #C97043;
+    transition: 0.3s;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 80px;
+    gap: 40px;
+}
+
+.intro h1 {
+    width: 720px;
+    color: #543021;
+}
+
+.team img {
+    width: 140px;
+    height: 140px;
+}
+
+.team {
+    display: flex;
+    gap: 40px;
+}
+
+.team h4,
+small {
+    color: #543021;
+}
+
+.socia {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bg-line-home {
+    z-index: -1000;
+    position: absolute;
+    right: -100px;
+    top: 0;
+    gap: 0;
+}
+
+.bg-line-home-mob {
+    display: none;
+}
+
+.clientes {
+    background-color: #C97043;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    border-radius: 30px;
+    padding: 80px;
+}
+
+.clientes ul {
+    display: flex;
+    justify-content: center;
+    gap: 80px 80px;
+    flex-wrap: wrap;
+
+}
+
+.clientes img {
+    max-width: 200px;
+}
+
+.clientes h2 {
+    max-width: 60%;
+    color: #ffffff;
+}
+
+.clientes p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+    color: #ffffff;
+}
+
+
+.icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-btn p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+    color: #ffffff;
+}
+
+/*Depoimentos*/
+
+.section-02 {
+    display: flex;
+    flex-direction: column;
+    gap: 120;
+}
+
+.gallery {
+    margin-top: 320px;
+    margin-bottom: 320px;
+    display: grid;
+    grid-template-columns: repeat(4, 500px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 120px;
+    overflow: scroll;
+    width: calc(100% + 80px);
+    scroll-snap-type: both mandatory;
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+
+ul.gallery {
+    padding: 0 80px 0 0;
+}
+
+.depoimento-texto {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.18px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    width: 500px;
+    color: #543021;
+}
+
+.active {
+    scroll-snap-type: unset;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.depoimento-nome,
+.depoimento-empresa {
+    color: #543021;
+}
+
+/*Case de Sucesso*/
+
+.case-de-portfolio {
+    background-color: #C97043;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 30px;
+    padding: 80px;
+    height: 600px;
+}
+
+.case-de-portfolio h1 {
+    color: #ffffff;
+}
+
+.case-de-portfolio p {
+    color: #ffffff;
+}
+
+.content-case-de-portfolio {
+    position: relative;
+}
+
+.text-case-de-portfolio {
+    max-width: 40%;
+}
+
+/* Soluções */
+
+.solucoes-home {
+    position: relative;
+    display: flex;
+    height: 860px;
+}
+
+.linha-solucoes {
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+}
+
+.interacao-fala-larissa {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.interacao-fala-larissa p {
+    color: #543021;
+    /* p-menor */
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+    width: 220px;
+}
+
+.solucoes-img-lari {
+    width: 140px;
+}
+
+.linha-divisora {
+    width: 40px;
+}
+
+.nav-solucoes {
+    position: absolute;
+    right: 0;
+    margin-top: 120px;
+
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    margin-top: 120px;
+}
+
+.accordion-item {
+    border-top: 1px solid var(--terracota, #C97043);
+    border-bottom: 1px solid var(--terracota, #C97043);
+
+    margin-top: -1px;
+
+    padding: 60px 0px;
+}
+
+.ver-mais-btn {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    width: 140px;
+    height: 27px;
+    flex-shrink: 0;
+    color: #543021;
+}
+
+.ver-mais-btn p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+    color: #C97043;
+}
+
+.ver-mais-btn p:hover {
+    color: #543021;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+    display: none;
+    margin-top: 40px;
+    transition: 01s;
+}
+
+.accordion-content p {
+    color: #543021;
+}
+
+.linhas-decorativas-home {
+    position: relative;
+    margin-top: 120px;
+    width: 1920px;
+    left: -80px;
+    z-index: -1;
+}
+
+/* Abordagem */
+
+.abordagem-home {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.abordagem-home h2 {
+    color: #C97043;
+    max-width: 500px;
+    margin-top: 120px;
+}
+
+.abordagem-home h4 {
+    color: #543021;
+    margin-top: 16px;
+}
+
+.abordagem-home p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+    color: #543021;
+    margin-top: 12px;
+}
+
+.abordagem-home ul {
+    margin-top: 80px;
+    max-width: 1100px;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 80px 80px;
+    flex-wrap: wrap;
+}
+
+.abordagem-home li {
+    width: 370px;
+    height: 215px;
+    flex-shrink: 0;
+}
+
+
+.interacao-fala-suelen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    justify-content: right;
+    gap: 16px;
+}
+
+.interacao-fala-suelen p {
+    color: var(--marrom, #543021);
+    /* p-menor */
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+    width: 220px;
+}
+
+/* Chamada Collabs*/
+
+.collab-home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 120px;
+    background-image: url(img/menino-olhando-pela-janela.png);
+    background-size: cover;
+    background-position: center;
+    height: 720px;
+    border-radius: 30px;
+    background-color: #C97043;
+}
+
+.collab-home h2 {
+    color: #ffffff;
+    max-width: 620px;
+    text-align: center;
+}
+
+.collab-home p {
+    color: #ffffff;
+    max-width: 620px;
+    text-align: center;
+}
+
+.collab-home button {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    /* p */
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 26px */
+    letter-spacing: -0.2px;
+}
+
+.collab-home button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #543021;
+}
+
+
+
+/* Contato */
+
+.contato {
+    background-color: #C97043;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    border-radius: 30px;
+    padding: 80px;
+}
+
+.contato-conteudo {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-conteudo h2 {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.contato-conteudo p {
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.botoes-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.botoes-conteudo button {
+    color: #ffffff;
+    background-color: #C97043;
+    border: 2px solid #ffffff;
+}
+
+.botoes-conteudo button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #543021;
+}
+
+.contato-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+input,
+textarea {
+    border-radius: 30px;
+    background: #ffffff;
+    padding: 16px;
+    resize: none;
+    width: 400px;
+}
+
+input,
+textarea {
+    color: #543021;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.18px;
+}
+
+.contato-formulario button {
+    background-color: #C97043;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.contato-formulario button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #543021;
+}
+
+.checkbox {
+    color: #ffffff;
+    display: flex;
+    gap: 16px;
+
+    /* small */
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.14px;
+    padding: 10px 0px;
+    cursor: pointer;
+    width: 400px;
+}
+
+.checkbox input {
+    width: auto;
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+.traco-contato {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.traco-contato-mob {
+    display: none;
+}
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-empresa-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.footer-empresa-geral img {
+    width: 16px;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-social-media-icones {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-media p {
+    color: #543021;
+    /* p-menor */
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
+}
+
+.news-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.news-footer input {
+    width: 320px;
+    margin-top: 16px;
+}
+
+.news-footer button {
+    padding: 20px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px solid #C97043;
+    background: #C97043;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    width: 320px;
+    margin-top: 16px;
+}
+
+.news-footer p {
+        /* p-menor */
+        color: #543021;
+        font-family: Work Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 27px */
+        letter-spacing: -0.18px;
+        width: 220px;
+}
+
+
+.floating-buttons {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    gap: 16px;
+}
+
+
+.floating-buttons button {
+    padding: 12px 16px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px solid #C97043;
+    background: #EDE0D6;
+    color: #543021;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+}
+
+.floating-buttons button a {
+    font-size: 16px;
+    display: flex;
+    gap: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-buttons button:hover {
+    background-color: #C97043;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Estilos para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem vertical */
+    height: 8px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: #C97043;
+    /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #543021;
+    /* Cor do "polegar" da barra de rolagem */
+}
+
+/* Estilos para navegadores Mozilla (Firefox) */
+/* Nota: O suporte a estilização da barra de rolagem no Firefox é limitado */
+/* Você pode aplicar apenas cores na barra de rolagem no Firefox */
+
+/* Cor da barra de rolagem vertical */
+::-moz-scrollbar {
+    background: #C97043;
+}
+
+/* Cor do "polegar" da barra de rolagem vertical */
+::-moz-scrollbar-thumb {
+    background: #543021;
+}
+
+
+
+
+@media (max-height: 600px) {
+
+    main {
+        height: 80vh;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: auto;
+        bottom: 40px;
+        gap: 40px;
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-family: Ragasta;
+        font-size: 2em;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+        font-variant-ligatures: none;
+        color: #543021;
+    }
+
+}
+
+/* Responsivo para mobile */
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        background-color: #EDE0D6;
+        margin: 0;
+        padding: 80px 20px;
+        overflow-x: hidden;
+    }
+
+    /*type*/
+
+    h1 {
+        font-family: Ragasta;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        color: #543021;
+    }
+
+    h2 {
+        font-family: Ragasta;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    h3 {
+        font-family: Work Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 120%;
+        letter-spacing: -0.32px;
+    }
+
+    h4 {
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.16px;
+    }
+
+    p {
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.16px;
+    }
+
+    small {
+        font-family: Work Sans;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.11px;
+    }
+
+    a {
+        font-family: Work Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.20px;
+    }
+
+    /* Estilos */
+
+    button {
+        padding: 20px 40px;
+        border-radius: 100px;
+        cursor: pointer;
+        border: 1px solid #C97043;
+        background: #EDE0D6;
+        color: #543021;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+    }
+
+    button a {
+        display: flex;
+        gap: 4px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button:hover {
+        background-color: #C97043;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    main {
+        height: 88vh;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 40px;
+        gap: 40px;
+    }
+
+    .intro h1 {
+        width: 320px;
+        color: #543021;
+    }
+
+    .team {
+        display: inline-flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .team img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .team h4,
+    small {
+        color: #543021;
+    }
+
+    .socia {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .bg-line-home {
+        z-index: -10000;
+        position: absolute;
+        right: -30px;
+        top: -80px;
+        display: none;
+    }
+
+    .bg-line-home-mob {
+        z-index: -10000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+
+    }
+
+    /* Contato */
+
+    .contato {
+        background-color: #C97043;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        border-radius: 30px;
+        padding: 64px 16px;
+    }
+
+    .contato-conteudo {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-conteudo h2 {
+        margin-bottom: 16px;
+        color: white;
+    }
+
+    .contato-conteudo p {
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+
+    .botoes-conteudo {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+    }
+
+    .botoes-conteudo button {
+        color: #ffffff;
+        background-color: #C97043;
+        border: 2px solid #ffffff;
+    }
+
+    .botoes-conteudo button:hover {
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        color: #543021;
+    }
+
+    .contato-formulario {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+    input,
+    textarea {
+        border-radius: 30px;
+        border: 2px solid #543021;
+        background: #ffffff;
+        padding: 16px;
+        resize: none;
+        width: auto;
+    }
+
+    input,
+    textarea {
+        color: #543021;
+        font-family: Work Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.18px;
+    }
+
+    .contato-formulario button {
+        background-color: #C97043;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 20px 40px;
+    }
+
+    .contato-formulario button:hover {
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        color: #543021;
+    }
+
+    .checkbox {
+        color: #ffffff;
+        display: flex;
+        gap: 8px;
+
+        /* small */
+        font-family: Work Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.14px;
+        padding: 10px 0px;
+        cursor: pointer;
+        width: auto;
+    }
+
+    .checkbox input {
+        width: auto;
+        cursor: pointer;
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 0px;
+    }
+
+    .traco-contato {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .traco-contato-mob {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+
+    footer {
+        margin-top: 120px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .footer-social-media-icones {
+        margin-top: 24px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .floating-buttons {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        gap: 16px;
+        display: none;
+    }
+
+
+    .floating-buttons button {
+        padding: 12px 16px;
+        border-radius: 100px;
+        cursor: pointer;
+        border: 1px solid #C97043;
+        background: #EDE0D6;
+        color: #543021;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+    }
+
+    .floating-buttons button a {
+        font-size: 16px;
+        display: flex;
+        gap: 4px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .floating-buttons button:hover {
+        background-color: #C97043;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+}
+
+/* Scroll Animation */
+
+.box-1 {
+    animation-name: moveBox;
+    animation-duration: .8s;
+    animation-fill-mode: both;
+}
+
+@keyframes moveBox {
+
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    animate__fadeIn {
+        animation-name: fadeIn;
+    }
+}
+
+.box-2 {
+    animation-name: moveBox;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}
+
+@keyframes moveBox {
+
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    animate__fadeIn {
+        animation-name: fadeIn;
+    }
+}
+
+.js .js-scroll {
+    opacity: 0;
+    transform: translatey(80px);
+    transition: .8s;
+}
+
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
