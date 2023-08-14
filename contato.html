@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados básicos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações sobre o site -->
+    <title>Somos Estúdio</title>
+    <meta name="description"
+        content="A Somos Estúdio é uma martech que possui a missão de transformar o cenário de experiências de marca, cultura e D&">
+    <meta name="keywords"
+        content=" Identidade Visual, Brand, Growth, Gerenciamento de Social Media e Estratégia Always On; Planejamento de Conteúdo e Partnership Hunting, Planejamento Estratégico, Desenvolvimento e Execução de Projetos Especiais, Desenvolvimento de Programas de D&I, Estratégias de Give Back e Consultorias">
+    <meta name="author" content="Somos Estúdio">
+
+    <!-- Ícone do site -->
+    <link rel="icon" href="img/favicon-somos.png" type="image/x-icon">
+
+    <!-- Folha de estilos (exemplo usando arquivo externo) -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts JavaScript  -->
+    <script>document.documentElement.className += ' js';</script>
+    <script src="script.js" defer></script>
+
+    <!-- Metatags para redes sociais  -->
+    <meta property="og:title"
+        content="A Somos Estúdio é uma martech que possui a missão de transformar o cenário de experiências de marca, cultura e D&">
+    <meta property="og:description"
+        content="A Somos Estúdio é uma martech que possui a missão de transformar o cenário de experiências de marca, cultura e D&">
+    <meta property="og:image" content="URL da imagem para compartilhamento">
+    <meta property="og:url" content="URL da página compartilhada">
+    <meta name="theme-color" content="#EDE0D6">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="box-1" src="img/somos-estudio-logotipo.svg">
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="solucoes.html">Soluções</a>
+            <a href="">Clientes</a>
+            <a href="">Comunidade</a>
+            <a href="sobre.html">A Somos</a>
+            <a href="contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="contato-intro js-scroll">
+        <p>Contato</p>
+        <h1>Quer transformar a experiência da sua marca?</h1>
+    </div>
+
+    <!-- Contato-->
+
+    <section class="contato js-scroll">
+        <div class="contato-conteudo">
+            <h2>Fale com a gente</h2>
+            <p>Preencha o formulário para falar com a gente, ou agende agora uma reunião. Se preferir, nos chame no
+                Whatsapp.</p>
+
+            <div class="botoes-conteudo">
+                <button><a href="#"><img src="img/whatsapp.svg" alt="Ícone do WhatsApp">Fale no WhatsApp</a></button>
+                <button class="botao-center"><a href="#"><img src="img/calendly.svg" alt="Ícone do Calendly">Agende uma
+                        reunião</a></button>
+            </div>
+        </div>
+
+
+        <form action="enviar.php" method="POST" class="contato-formulario">
+
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+            <input id="email" name="email" required placeholder="Seu melhor a-mail">
+
+            <textarea id="mensagem" name="mensagem" rows="5" cols="30" required placeholder="Mensagem"></textarea>
+
+            <div class="checkbox">
+                <input type="checkbox" id="politicas" name="politicas" required>
+                <label for="politicas">Ao enviar, declaro que concordo com as políticas de privacidade da
+                    Somos</label>
+            </div>
+
+            <button value="Enviar"><a href="#" class="">Enviar</button></a>
+
+        </form>
+
+
+    </section>
+
+    <footer class="rodape">
+        <div class="footer-empresa-geral">
+            <div class="footer-empresa">
+                <h1>Somos</h1>
+                <small>SOMOS ESTÚDIO LTDA<br>CNPJ: 48.068.691/0001-91</small>
+            </div>
+            <img src="img/sidney-souza.svg" alt="Sidney Souza Designer" class="">
+        </div>
+        <ul class="menu-footer">
+            <li><a href="" class="">Ínicio</a></li>
+            <li><a href="" class="">Soluções</a></li>
+            <li><a href="" class="">Clientes</a></li>
+            <li><a href="" class="">Comunidade</a></li>
+            <li><a href="" class="">A Somos</a></li>
+            <li><a href="" class="">Contato</a></li>
+
+        </ul>
+
+        <div class="footer-social-media">
+            <p>Siga a Somos</p>
+            <div class="footer-social-media-icones">
+                <a href="#"><img src="img/instagram.svg" alt=""></a>
+                <a href="#"><img src="img/linkedin.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="news-footer">
+            <p>News @ Somos</p>
+            <form action="" method="POST" class="form-footer">
+
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+                <input id="email" name="email" required placeholder="Seu a-mail">
+
+                <button value="Enviar"><a href="#" class="">Enviar</button></a>
+
+            </form>
+
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" onclick="scrollToTop()"><img src="img/botao-voltar-ao-topo.svg" alt="Voltar ao Topo"></a>
+
+</body>
+
+</html>
