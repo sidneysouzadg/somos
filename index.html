@@ -29,8 +29,8 @@
         rel="stylesheet">
 
     <!-- Scripts JavaScript  -->
-    <script>document.documentElement.className += ' js';</script>
     <script src="script.js" defer></script>
+    <script>document.documentElement.className += ' js';</script>
 
     <!-- Metatags para redes sociais  -->
     <meta property="og:title"
@@ -45,16 +45,22 @@
 
 <body>
 
-    <header>
-        <img class="box-1" src="img/somos-estudio-logotipo.svg">
+    <header id="header">
+        <a href="index.html"><img class="box-1" src="img/somos-estudio-logotipo.svg"></a>
 
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="solucoes.html">Soluções</a>
-            <a href="clientes.html">Clientes</a>
-            <a href="comunidade.html">Comunidade</a>
-            <a href="sobre.html">A Somos</a>
-            <a href="contato.html">Contato</a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false"><img src="img/menu-icon.svg" alt="Abrir menu">
+
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="sobre.html">A Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -361,9 +367,8 @@
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" onclick="scrollToTop()"><img src="img/botao-voltar-ao-topo.svg" alt="Voltar ao Topo"></a>
-
-    <script src="slide-script.js"></script>
+    <a href="#" class="back-to-top" onclick="scrollToTop()"><img src="img/botao-voltar-ao-topo.svg"
+            alt="Voltar ao Topo"></a>
 
 </body>
 

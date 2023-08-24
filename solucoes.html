@@ -30,7 +30,6 @@
 
     <!-- Scripts JavaScript  -->
     <script>document.documentElement.className += ' js';</script>
-    <script src="script.js" defer></script>
 
     <!-- Metatags para redes sociais  -->
     <meta property="og:title"
@@ -45,19 +44,27 @@
 
 <body>
 
-    <header>
-        <img class="box-1" src="img/somos-estudio-logotipo.svg">
 
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="solucoes.html">Soluções</a>
-            <a href="clientes.html">Clientes</a>
-            <a href="comunidade.html">Comunidade</a>
-            <a href="sobre.html">A Somos</a>
-            <a href="contato.html">Contato</a>
+<header id="header">
+        <a href="index.html"><img class="box-1" src="img/somos-estudio-logotipo.svg"></a>
+
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src="img/menu-icon.svg" alt="Abrir menu">
+            
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">A Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
         </nav>
+      </header>
     </header>
 
+    
     <section class="solucoes-intro js-scroll">
         <p>Soluções</p>
         <h1>Experiência de marca, cultura e diversidade & Inclusão</h1>
@@ -69,6 +76,7 @@
             <img src="img/grafismo-marca-somos.svg" alt="grafismo de marca" class="">
             <h2>Marca</h2>
         </div>
+        
 
         <div class="solucoes-lista-servicos">
 
@@ -364,7 +372,8 @@
 
     <a href="#" class="back-to-top" onclick="scrollToTop()"><img src="img/botao-voltar-ao-topo.svg" alt="Voltar ao Topo"></a>
 
-    <script src="slide-script.js"></script>
+    <script src="script.js"></script>
+    
 
 </body>
 

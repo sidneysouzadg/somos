@@ -29,8 +29,8 @@
         rel="stylesheet">
 
     <!-- Scripts JavaScript  -->
-    <script>document.documentElement.className += ' js';</script>
     <script src="script.js" defer></script>
+    <script>document.documentElement.className += ' js';</script>
 
     <!-- Metatags para redes sociais  -->
     <meta property="og:title"
@@ -45,16 +45,23 @@
 
 <body>
 
-    <header>
-        <img class="box-1" src="img/somos-estudio-logotipo.svg">
 
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="solucoes.html">Soluções</a>
-            <a href="clientes.html">Clientes</a>
-            <a href="comunidade.html">Comunidade</a>
-            <a href="sobre.html">A Somos</a>
-            <a href="contato.html">Contato</a>
+    <header id="header">
+        <a href="index.html"><img class="box-1" src="img/somos-estudio-logotipo.svg"></a>
+
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false"><img src="img/menu-icon.svg" alt="Abrir menu">
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="sobre.html">A Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -130,19 +137,23 @@
                 <img src="img/linha-divisora.svg" alt="Grafismo">
                 <p>SALESFORCE
 
-                    Presidente do Grupo de Equidade Racial, BOLDForce Brasil TOP Performance LATAM - Q1 2023 TOP Performance LATAM - Deals Closed<br><br>
-                    
+                    Presidente do Grupo de Equidade Racial, BOLDForce Brasil TOP Performance LATAM - Q1 2023 TOP
+                    Performance LATAM - Deals Closed<br><br>
+
                     AMAZON<br><br>
-                    
-                    Responsável por iniciar o projeto de vendas de mídias no modelo de FBA Membro BEN - Black Employee Network<br><br>
-                    
+
+                    Responsável por iniciar o projeto de vendas de mídias no modelo de FBA Membro BEN - Black Employee
+                    Network<br><br>
+
                     LINKEDIN<br><br>
-                    
-                    Responsável pela implementação de mais de 30 projetos do Sales Navigator na América Latina Membro BIG - Black Inclusion Group</p>
+
+                    Responsável pela implementação de mais de 30 projetos do Sales Navigator na América Latina Membro
+                    BIG - Black Inclusion Group</p>
             </div>
             <div class="numeros-curriculo">
                 <h1>+50</h1>
-                <p>atuaçoes em negociações internacionais com empresas no Brasil e em mais 8 países da América Latina e Central</p>
+                <p>atuaçoes em negociações internacionais com empresas no Brasil e em mais 8 países da América Latina e
+                    Central</p>
                 <h1>+300</h1>
                 <p>pessoas impactadas no mercado de tecnologia global, para ações afirmativas para pessoas negras.</p>
             </div>
@@ -188,7 +199,7 @@
         </div>
 
     </section>
-    
+
     <section class="collab-home js-scroll">
 
         <h2>Vem trabalhar com a gente</h2>
@@ -240,9 +251,9 @@
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" onclick="scrollToTop()"><img src="img/botao-voltar-ao-topo.svg" alt="Voltar ao Topo"></a>
+    <a href="#" class="back-to-top" onclick="scrollToTop()"><img src="img/botao-voltar-ao-topo.svg"
+            alt="Voltar ao Topo"></a>
 
-    <script src="slide-script.js"></script>
 
 </body>
 
