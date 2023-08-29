@@ -142,13 +142,12 @@ nav {
     height: 27px;
     justify-content: center;
     align-items: center;
-    gap: 40px;
     flex-shrink: 0;
 }
 
 nav ul {
     display: flex;
-    gap: 40px;
+    gap: 60px;
 }
 
 nav a {
@@ -202,7 +201,7 @@ nav a:hover {
 #menu {
     display: flex;
     list-style: none;
-    gap: 0.5rem;
+    gap: 2.5em;
 }
 
 #menu a {

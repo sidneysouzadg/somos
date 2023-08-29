@@ -121,10 +121,10 @@ function mostrarSlide(n) {
   }
 
   for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("ativo"); // Remova a classe "ativo" de todos os slides
+    slides[i].classList.remove("ativo");
     slides[i].style.display = "none";
   }
 
-  slides[indiceSlide].classList.add("ativo"); // Adicione a classe "ativo" ao slide atual
+  slides[indiceSlide].classList.add("ativo");
   slides[indiceSlide].style.display = "block";
 }
