@@ -23,6 +23,10 @@ body {
     src: url(assets/ragasta-font/Ragasta.otf);
 }
 
+.sidneysouza img {
+    min-width: 32px;
+}
+
 /*type*/
 
 

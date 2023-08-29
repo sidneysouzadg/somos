@@ -75,6 +75,15 @@
         letter-spacing: -0.20px;
     }
 
+    header {
+        align-items: center;
+    }
+
+    header button#btn-mobile {
+        padding: 0px;
+        margin: 0;
+    }
+
     .botoes-contato-fixo {
         position: fixed;
         display: flex;
