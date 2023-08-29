@@ -19,8 +19,8 @@ function initAnimacaoScroll() {
     window.addEventListener('scroll', animaScroll);
   }
 }
-initAnimacaoScroll();
 
+initAnimacaoScroll();
 
 function toggleAccordion(header) {
   var content = header.nextElementSibling;
@@ -99,3 +99,32 @@ slider.addEventListener('mousemove', e => {
   const walk = (x - startX) * SCROLL_SPEED;
   slider.scrollLeft = scrollLeft - walk;
 });
+
+
+/* Galeria de imagens */
+
+let indiceSlide = 0;
+mostrarSlide(indiceSlide);
+
+function mudarSlide(n) {
+  mostrarSlide(indiceSlide += n);
+}
+
+function mostrarSlide(n) {
+  const slides = document.getElementsByClassName("comunidade-slide");
+
+  if (n >= slides.length) {
+    indiceSlide = 0;
+  }
+  if (n < 0) {
+    indiceSlide = slides.length - 1;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("ativo"); // Remova a classe "ativo" de todos os slides
+    slides[i].style.display = "none";
+  }
+
+  slides[indiceSlide].classList.add("ativo"); // Adicione a classe "ativo" ao slide atual
+  slides[indiceSlide].style.display = "block";
+}
