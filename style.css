@@ -1397,10 +1397,6 @@ tag {
     margin-top: 40px;
 }
 
-.projeto-banner-case-hero h1,p {
-    color: #ffffff;
-}
-
 .text-overlay-projeto {
     position: absolute;
     bottom: 120px;
@@ -1413,6 +1409,7 @@ tag {
     margin-top: 80px;
     display: flex;
     gap: 80px;
+    margin-bottom: 40px;
 }
 
 .projeto-lista-de-solucoes ul {
@@ -1711,7 +1708,7 @@ tag {
 
 .sobre-04 {
     position: absolute;
-    z-index: -2;
+    z-index: 1;
     top: 1200px;
 
 }
@@ -1732,6 +1729,10 @@ tag {
     flex-direction: column;
     align-items: center;
     margin-top: 220px;
+}
+
+.card-bio p {
+    color: #ffffff;
 }
 
 .img-lari-card {
