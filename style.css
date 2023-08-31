@@ -440,6 +440,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     border-radius: 30px;
 }
 
+.image-projeto-destaque p {
+    color: #ffffff;
+}
+
 .rounded-image {
     object-fit: cover;
     border-radius: 30px;
