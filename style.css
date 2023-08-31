@@ -58,6 +58,7 @@ h3 {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.32px;
+    color: #543021;
 }
 
 h4 {
@@ -70,6 +71,7 @@ h4 {
 }
 
 p {
+    color: #543021;
     font-family: Work Sans;
     font-size: 20px;
     font-style: normal;
@@ -77,6 +79,18 @@ p {
     line-height: 130%;
     /* 26px */
     letter-spacing: -0.2px;
+}
+
+.p-menor {
+    color: #543021;
+    /* p-menor */
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    letter-spacing: -0.18px;
 }
 
 small {
@@ -1068,11 +1082,18 @@ Página Clientes
     color: #ffffff;
 }
 
-.text-overlay-clientes h1 {
+.text-overlay-clientes h3 {
     color: #ffffff;
 }
 
 .text-overlay-clientes p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.18px;
+    color: #ffffff;
     width: 100%;
 }
 
@@ -1366,6 +1387,118 @@ tag {
     text-align: right;
     margin-right: 40px;
 }
+
+
+/*Projeto*/
+
+
+.projeto-banner-case-hero {
+    position: relative;
+    margin-top: 40px;
+}
+
+.projeto-banner-case-hero h1,p {
+    color: #ffffff;
+}
+
+.text-overlay-projeto {
+    position: absolute;
+    bottom: 120px;
+    left: 120px;
+    width: 620px;
+    color: #ffffff;
+}
+
+.projeto-intro {
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+}
+
+.projeto-lista-de-solucoes ul {
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projeto-intro-descricao h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.projeto-1-imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.projeto-1-imagem img {
+    margin-top: 80px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 30px
+}
+
+.projeto-2-imagem {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.projeto-2-imagem img {
+    margin-top: 80px;
+    width: 48%;
+    flex-shrink: 0;
+    border-radius: 30px
+}
+
+.projeto-infos-em-duas-colunas-h4-p {
+    display: flex;
+    margin-top: 80px;
+}
+
+.projeto-infos-em-duas-colunas-h4-p h4 {
+    width: 500px;
+    margin-right: 140px;
+    color: #C97043;
+}
+
+.projeto-infos-em-duas-colunas-h4-p p {
+    color: #543021;
+}
+
+.projeto-depoimento-de-cliente {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.projeto-depoimento-de-cliente img {
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
